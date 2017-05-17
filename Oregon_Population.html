@@ -67,6 +67,7 @@ function draw_chart(data, category) {
     var y = buttons.addCategoryAxis("y", "year");
     y.addOrderRule("year", "Desc");
     
+    // x-axis of button chart is category passed to draw_chart function
     var x = buttons.addMeasureAxis("x", category);
     x.hidden = true;
 
@@ -99,7 +100,7 @@ function draw_chart(data, category) {
             .style("color", "Black")
             .text(function (d) { return d; });
 
-    // Draw the default population bar plot
+    // Draw the main bar plot
     var myChart = new dimple.chart(svg, data);
       myChart.setBounds(MARGIN, MARGIN , WIDTH - BUTTON_X - 2 * MARGIN, HEIGHT - 3 * MARGIN)
       var x = myChart.addCategoryAxis("x", "County");
@@ -124,8 +125,7 @@ function draw_chart(data, category) {
             story.goToFrame(e.yValue);
             story.pauseAnimation();
         }
-    };
-
+      };
     // Handle coloring of year bars
     function onTick(e) {
         if (!firstTick) {
@@ -137,22 +137,23 @@ function draw_chart(data, category) {
         }
         firstTick = false;
     };
+
 //Chart if Population Button Hit
   d3.select("#btn").on("click", function() {
       d3.select("#chartcontainer").selectAll("*").remove();
-       d3.tsv("Oregon_data.tsv", function (data) {
+      d3.tsv("Oregon_data.tsv", function (data) {
           draw_chart(data, "Population");  
         });
      });
+
 //Chart if Percent_Change Button Hit
   d3.select("#btn2").on("click", function() {
       d3.select("#chartcontainer").selectAll("*").remove();
-       d3.tsv("Oregon_data.tsv", function (data) {
+      d3.tsv("Oregon_data.tsv", function (data) {
           draw_chart(data, "Percent_Change");  
         });
      }); 
 };
-
 
 </script>
 </div>
@@ -160,7 +161,6 @@ function draw_chart(data, category) {
   d3.tsv("Oregon_data.tsv", function (data) {
       draw_chart(data, "Population");  
   });
-
 </script>
 </body>
 </html>
