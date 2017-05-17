@@ -55,3 +55,5 @@ http://dimplejs.org/advanced_examples_viewer.html?id=advanced_storyboard_control
 https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.storyboard
 https://discussions.udacity.com/
 https://www.w3schools.com/html/html_basic.asp
+
+For more information on the dataset used, see [Dataset_Readme.txt](https://github.com/bartleatham/DAND_P6/blob/master/Dataset_Readme.txt) in this repository.
