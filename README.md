@@ -28,6 +28,9 @@ time range of interest. In the percent_change chart, I decided to make a concess
 instead of having fixed values. This is due to there being such a large range over which the percent_change ranges. If I 
 fixed the range to max values of % gain and loss, then the more common small changes would not be visually apparent.
 
+## Example sketch image from exploration
+![Example sketch image](https://github.com/bartleatham/DAND_P6/blob/master/Oregon_population_sketch_1.png "Example sketch image")
+
 ## Feedback
 (1) Eric Leatham, brother and web designer.
   Having worked with D3 and animated plots, Eric appreciated the simplicity that Dimple provides for automated charts.
@@ -52,5 +55,3 @@ http://dimplejs.org/advanced_examples_viewer.html?id=advanced_storyboard_control
 https://github.com/PMSI-AlignAlytics/dimple/wiki/dimple.storyboard
 https://discussions.udacity.com/
 https://www.w3schools.com/html/html_basic.asp
-
-
