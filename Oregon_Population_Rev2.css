@@ -1,0 +1,17 @@
+#myButtons {
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+        padding: 5px;
+            }
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+    font-size: 200%;
+  }
+p {
+    color: black;
+    font-family: sans-serif;
+    font-size: 90%;
+}

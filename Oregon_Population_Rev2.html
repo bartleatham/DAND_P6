@@ -1,0 +1,35 @@
+<html>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="Oregon_Population_rev2.css" />
+
+<body>
+<h1>Counties in Oregon Population Changes 1850 - 2015*</h1>
+
+<p>*2015 data estimated</p>
+<p>On February 14, 1859 Oregon offically became a state, since then it has seen a steady growth in its overall population.</p>
+
+<p>Below we can see that the urban counties have seen tremendous growth over the years, while rural counties<br> 
+  are trending towards stagnate if not decreasing populations. <br>
+  *Note the Logarithmic scale when comparing counties.</p>
+
+<p>
+Please select a button below to toggle between Population or Percent Change charts.
+</p>
+  <div id="myButtons" style="text-align:center;">
+        <button id='btn'>
+            Population
+        </button>
+        <button id='btn2'>
+            Percent Change
+        </button>
+        <button id='btn3'>
+            Restart Animation
+        </button>
+  </div>
+<div id="chartContainer"></div>
+<script src="Oregon_Population_rev2.js"></script>
+
+</body>
+</html>
