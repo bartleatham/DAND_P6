@@ -8,6 +8,12 @@ from 1850 until 2015.  The database consists of US census data for 1850 - 2010 i
 population data is estimated based on demographic data reported on [wikipedia](https://www.wikipedia.org/).
 In the visualization of the data provided, we can see that urban counties have seen consistent growth over the years, while rural counties have trended towards stagnate if not decreasing populations.
 
+## Files necessary to recreate visualization
+[Oregon_data.tsv](https://github.com/bartleatham/DAND_P6/blob/master/Oregon_data.tsv)  
+[Oregon_Population_Rev2.js](https://github.com/bartleatham/DAND_P6/blob/master/Oregon_Population_Rev2.js)  
+[Oregon_Population_Rev2.html](https://github.com/bartleatham/DAND_P6/blob/master/Oregon_Population_Rev2.html)  
+[Oregon_Population_Rev2.css](https://github.com/bartleatham/DAND_P6/blob/master/Oregon_Population_Rev2.css)  
+
 ## Design Process
 I had many starts and stops on this project before reaching the final state.  To start with, I could not find a 
 comprehensive database online with the data that I desired, so I created a custom database with data derived from
